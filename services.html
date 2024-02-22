@@ -56,12 +56,170 @@
         </div>
     </section>
     <!-- section-3 -->
-    <div class="sec3">
-        <div class="web">
-            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/google-code.png" alt="google-code"/>
-        </div>
+    <section class="sec3">
+        <div class="flex-box">
 
-    </div>
+            <div class="box1">
+                <div class="align-img">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/google-code.png"
+                        alt="google-code" />
+                </div>
+                <div class="align-head">
+                    <h2>Web Development</h2>
+                </div>
+                <div class="align-para">
+                    <p>Tech SaraZ builds custom websites using an iterative, best-user-focused approach for great
+                        functionality and user experience in an intuitive interface.</p>
+                </div>
+            </div>
+            <!-- box-2 -->
+            <div class="box2">
+                <div class="img-2">
+                    <img src="icons8-e-commerce-32.png" alt="loading" width="50" height="50">
+                </div>
+
+                <div class="heading-2">
+                    <h2>E-commerce</h2>
+                </div>
+
+                <div class="para-2">
+                    <p>We create personalized, interactive e-commerce platforms, merging technology with a user-centric
+                        design to enhance customers' shopping experience.</p>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class="box3">
+                <div class="img-3">
+                    <img src="icons8-designing-64.png" alt="loading" width="50" height="50">
+                </div>
+
+                <div class="heading-3">
+                    <h2>UI and UX Designing</h2>
+                </div>
+
+                <div class="para-3">
+                    <p>Our design services balance aesthetics and usability, creating interactive UI and UX designs that
+                        enhance user experience and boost engagement.</p>
+                </div>
+            </div>
+        </div><br>
+        <!-- box-row-2 -->
+        <div class="flex-box-2">
+
+            <div class="box4">
+                <div class="img-4">
+                    <img width="50" height="50" src="icons8-digital-marketing-64.png" alt="google-code" />
+                </div>
+                <div class="heading-4">
+                    <h2>Digital Marketing</h2>
+                </div>
+                <div class="para-4">
+                    <p>We leverage the latest strategies with our comprehensive digital marketing services. We amplify
+                        your brand presence, attract more leads, and convert them into your loyal customers.</p>
+                </div>
+            </div>
+            <!-- box-5 -->
+            <div class="box5">
+                <div class="img-5">
+                    <img src="icons8-content-writing-48.png" alt="loading" width="50" height="50">
+                </div>
+
+                <div class="heading-5">
+                    <h2>Content writing</h2>
+                </div>
+
+                <div class="para-5">
+                    <p>Our professional writers craft compelling narratives that resonate with your audience, driving
+                        engagement and bolstering your brand's image.</p>
+                </div>
+            </div>
+            <!-- box-3 -->
+            <div class="box6">
+                <div class="img-6">
+                    <img src="icons8-imac-picture-50.png" alt="loading" width="50" height="50">
+                </div>
+
+                <div class="heading-6">
+                    <h2>Graphics Designing</h2>
+                </div>
+
+                <div class="para-6">
+                    <p>
+                        Our graphic design services deliver stunning, creative visuals that captivate your audience and
+                        effectively communicate your brand message.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-4 -->
+    <section class="sec4">
+        <div class="align-circle">
+            <div class="percent">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number">
+
+                        </div>
+                        <h5>web development</h5>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" storke-linecap="round" />
+                </svg>
+
+            </div>
+            <script>
+                let number = document.getElementById("number");
+                let counter = 0;
+                setInterval(() => {
+                    if (counter == 70) {
+                        clearInterval();
+                    } else {
+                        counter += 1;
+                        number.innerHTML = counter + "%";
+                    }
+                }, 30);
+            </script>
+            <!-- circle -2 -->
+            <div class="percent-2">
+                <div class="outer-2">
+                    <div class="inner-2">
+                        <div id="num2">
+
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" storke-linecap="round" />
+                </svg>
+            </div>
+            <script>
+                let num2 = document.getElementById("num2");
+                let count2 = 0;
+                setInterval(() => {
+                    if (count2 == 60){
+                        clearInterval();
+                    } else{
+                        count2 += 1;
+                        num2.innerHTML = count2 + "%";
+                    }
+                }, 30);
+            </script>
+
+        </div>
+    </section>
 </body>
 
 </html>
