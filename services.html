@@ -152,73 +152,123 @@
         </div>
     </section>
     <!-- section-4 -->
-    <section class="sec4">
-        <div class="align-circle">
-            <div class="percent">
-                <div class="outer">
-                    <div class="inner">
-                        <div id="number">
-
-                        </div>
-                        <h5>web development</h5>
-                    </div>
+    <div class="progress-container">
+        <div class="progress-title">Web Development</div>
+        <div class="progress-circle">
+            <div class="outer">
+                <div class="inner">
+                    <div class="num" id="num1"></div>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                    <defs>
-                        <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#e91e63" />
-                            <stop offset="100%" stop-color="#673ab7" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="80" cy="80" r="70" storke-linecap="round" />
-                </svg>
-
             </div>
-            <script>
-                let number = document.getElementById("number");
-                let counter = 0;
-                setInterval(() => {
-                    if (counter == 70) {
-                        clearInterval();
-                    } else {
-                        counter += 1;
-                        number.innerHTML = counter + "%";
-                    }
-                }, 30);
-            </script>
-            <!-- circle -2 -->
-            <div class="percent-2">
-                <div class="outer-2">
-                    <div class="inner-2">
-                        <div id="num2">
-
-                        </div>
-                    </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                    <defs>
-                        <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#e91e63" />
-                            <stop offset="100%" stop-color="#673ab7" />
-                        </linearGradient>
-                    </defs>
-                    <circle cx="80" cy="80" r="70" storke-linecap="round" />
-                </svg>
-            </div>
-            <script>
-                let num2 = document.getElementById("num2");
-                let count2 = 0;
-                setInterval(() => {
-                    if (count2 == 60){
-                        clearInterval();
-                    } else{
-                        count2 += 1;
-                        num2.innerHTML = count2 + "%";
-                    }
-                }, 30);
-            </script>
-
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor1">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" storke-linecap="round" />
+            </svg>
         </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress-title">UI and UX Designing</div>
+        <div class="progress-circle">
+            <div class="outer">
+                <div class="inner">
+                    <div class="num" id="num2"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor2">
+                        <stop offset="0%" stop-color="#2196f3" />
+                        <stop offset="100%" stop-color="#4caf50" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" storke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress-title">Digital Marketing</div>
+        <div class="progress-circle">
+            <div class="outer">
+                <div class="inner">
+                    <div class="num" id="num3"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor3">
+                        <stop offset="0%" stop-color="#ff5722" />
+                        <stop offset="100%" stop-color="#ffc107" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" storke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress-title">Graphics Designing</div>
+        <div class="progress-circle">
+            <div class="outer">
+                <div class="inner">
+                    <div class="num" id="num4"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                    <linearGradient id="GradientColor4">
+                        <stop offset="0%" stop-color="#ff9800" />
+                        <stop offset="100%" stop-color="#9c27b0" />
+                    </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" storke-linecap="round" />
+            </svg>
+        </div>
+    </div>
+    <script>
+        function animateProgress(id, percentage) {
+            let num = document.getElementById(id);
+            let count = 0;
+            setInterval(() => {
+                if (count === percentage) {
+                    clearInterval();
+                } else {
+                    count++;
+                    num.innerHTML = count + "%";
+                }
+            }, 30);
+        }
+        animateProgress("num1", 70);
+        animateProgress("num2", 60);
+        animateProgress("num3", 85);
+        animateProgress("num4", 90);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </section>
 </body>
 
