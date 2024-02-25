@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+        *body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+        <div class="myslide">
+            <img src="deer.jpg" alt="loading" width="14
+            00px" height="300px">
+        </div>
+        <div class="myslide">
+            <img src="deer2.jpg" alt="loading">
+        </div>
+        <div class="myslide">
+            <img src="dog.jpg" alt="loading">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div><br>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentslide(1)"></span>
+        <span class="dot" onclick="currentslide(2)"></span>
+        <span class="dot" onclick="currentslide(3)"></span>
+    </div>
+
+    <script>
+        let slideindex = 1;
+        showslides(slideindex);
+
+        function plusSlides(n) {
+            showslides(slideindex += n);
+        }
+
+        function currentslides(n) {
+            showslides(slideindex = n);
+        }
+
+        function showslides() {
+            let i;
+            let slides = document.getElementsByClassName(myslide);
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideindex = 1
+            }
+            if (n < 1) {
+                slideindex = slides.length
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("active", "");
+            }
+            slides[slideindex - 1].style.display = "block";
+            dots[slideindex - 1].className += "active";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
